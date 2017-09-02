@@ -1,0 +1,20 @@
+body {
+    font-family: $font-stack;
+    background: $main-background;
+  }
+  
+  .main-text {
+    font-size: em(18);
+    font-weight: 300;
+    letter-spacing: em(1.5);
+  }
+  
+  .card-color {
+    background: $secondary-color;
+    color: $text-color;
+  }
+  
+  .second-card-title {
+    font-size: em(55);
+  }
+  
