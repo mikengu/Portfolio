@@ -1,20 +1,25 @@
 body {
-    font-family: $font-stack;
-    background: $main-background;
-  }
-  
-  .main-text {
-    font-size: em(20);
-    font-weight: 200;
-    letter-spacing: em(1.5);
-  }
-  
-  .card-color {
-    background: $secondary-color;
-    color: $text-color;
-  }
-  
-  .second-card-title {
-    font-size: em(55);
-  }
-  
+  font-family: $font-stack;
+  background: $main-background;
+}
+
+.display-main {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.main-text {
+  font-size: em(20);
+  font-weight: 200;
+  letter-spacing: em(1.5);
+}
+
+.card-color {
+  background: $secondary-color;
+  color: $text-color;
+}
+
+.second-card-title {
+  font-size: em(55);
+}

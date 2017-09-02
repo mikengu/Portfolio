@@ -4,3 +4,13 @@
     }
   }
   
+
+@media only screen and (max-width: em(500)) {
+    .display-main {
+      font-size: 1.5rem;
+    }
+
+    .icon-name {
+      font-size: em(10);
+    }
+  }
