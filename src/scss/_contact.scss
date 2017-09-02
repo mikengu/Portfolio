@@ -1,0 +1,10 @@
+.contact-backdrop {
+    background-color: $eggplant;
+    color: $text-color;
+    transition: 0.3s ease opacity;
+    &:hover {
+        opacity: 0.94;
+        cursor: pointer;
+    }
+  }
+  

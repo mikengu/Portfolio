@@ -13,33 +13,38 @@
     padding: 10px;
     cursor: pointer;
   }
+
   .fa-twitter {
     transition: color 0.3s;
     &:hover {
-      color: #00aced;
-
+      color: $twitter-color;
     }
   }
 
   .fa-github {
     transition: color 0.3s;
     &:hover {
-      color: #723c74;
+      color: $github-color;
     }
   }
 
   .fa-linkedin {
     transition: color 0.3s;
     &:hover {
-      color: #007bb5;
+      color: $linkedin-color;
     }
   }
 
   .fa-pinterest {
     transition: color 0.3s;
     &:hover {
-      color: #cb2027;
+      color: $pinterest-color;
     }
+  }
+
+  .header-accent {
+    background: $eggplant;
+    color: $text-color;
   }
 
   .port-item {
@@ -53,7 +58,7 @@
 
   .port-item:hover {
     opacity: 0.8;
-    border-bottom: 2px solid #5D37A2;
+    border-bottom: 2px solid #5d37a2;
     cursor: pointer;
   }
 }

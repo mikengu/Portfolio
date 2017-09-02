@@ -1,11 +1,20 @@
-.about-title {
-    font-size: 40px;
+.backdrop {
+    background: $main-card;
+    color: $text-color;
 }
+
+.about-title {
+    font-size: em(40);
+}
+
+.icon-color {
+    color: $eggplant;
+  }
 
 .icon-size {
     font-size: 30px;
 }
 
 .tech-tools {
-    color: #555555;
+    color: $tech-color;
 }
