@@ -55,6 +55,9 @@ body {
   background: #592f5a;
   color: #fff; }
 
+#main-header .full-stack {
+  padding-left: 2.6rem; }
+
 #main-header .port-item {
   width: 25%;
   transition: 0.3s ease opacity;
