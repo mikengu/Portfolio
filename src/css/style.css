@@ -54,7 +54,7 @@ body {
     color: #cb2027; }
 
 #main-header .port-item {
-  width: 30%;
+  width: 25%;
   transition: 0.3s ease opacity;
   border-bottom: 5px solid transparent; }
   #main-header .port-item .fa {
