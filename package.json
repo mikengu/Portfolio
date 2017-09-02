@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "version": "1.0.0",
   "description": "Mike Portfolio",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "gulp"
   },
