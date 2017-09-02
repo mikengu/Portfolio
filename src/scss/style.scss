@@ -1,32 +1,9 @@
 @import 'variables';
-
-body {
-  font-family: $font-stack;
-  background: $main-background;
-}
-
-.main-text {
-  font-size: em(18);
-  letter-spacing: em(1.3);
-}
-
-.card-color {
-  background: $secondary-color;
-  color: $text-color;
-}
-
-.second-card-title {
-  font-size: em(55);
-}
-
+@import 'all';
 @import 'header';
 @import 'about';
 @import 'contact';
+@import 'footer';
+@import 'responsive';
 
 
-
-@media (min-width: em(1199)) {
-  .port-item {
-    padding: 3em !important;
-  }
-}
