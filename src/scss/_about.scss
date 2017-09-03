@@ -3,6 +3,11 @@
     color: $text-color;
 }
 
+.tech-container {
+    background: $white-backdrop;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
 .about-title {
     font-size: em(40);
 }
@@ -14,6 +19,7 @@
 .icon-size {
     font-size: em(30);
 }
+
 
 .tech-tools {
     color: $tech-color;
