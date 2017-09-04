@@ -32,21 +32,25 @@ body {
   cursor: pointer; }
 
 #main-header .fa-twitter {
+  -webkit-transition: color 0.3s;
   transition: color 0.3s; }
   #main-header .fa-twitter:hover {
     color: #00aced; }
 
 #main-header .fa-github {
+  -webkit-transition: color 0.3s;
   transition: color 0.3s; }
   #main-header .fa-github:hover {
     color: #723c74; }
 
 #main-header .fa-linkedin {
+  -webkit-transition: color 0.3s;
   transition: color 0.3s; }
   #main-header .fa-linkedin:hover {
     color: #007bb5; }
 
 #main-header .fa-pinterest {
+  -webkit-transition: color 0.3s;
   transition: color 0.3s; }
   #main-header .fa-pinterest:hover {
     color: #cb2027; }
@@ -60,6 +64,7 @@ body {
 
 #main-header .port-item {
   width: 25%;
+  -webkit-transition: 0.3s ease opacity;
   transition: 0.3s ease opacity;
   border-bottom: 5px solid transparent; }
   #main-header .port-item .fa {
@@ -94,6 +99,7 @@ body {
 .contact-backdrop {
   background-color: #592f5a;
   color: #fff;
+  -webkit-transition: 0.3s ease opacity;
   transition: 0.3s ease opacity; }
   .contact-backdrop:hover {
     opacity: 0.94;
@@ -110,13 +116,21 @@ body {
   border-color: #98519A; }
 
 .footer-style:focus, .footer-style.focus {
+  -webkit-box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.5);
   box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.5); }
 
 @media (min-width: 74.9375em) {
   .port-item {
-    padding: 3em !important; }
+    padding: 2.69em !important; }
   .last-item {
     padding-left: 7.1875em; } }
+
+@media only screen and (max-width: 48.125em) {
+  .column-md {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 @media only screen and (max-width: 31.25em) {
   .display-main {

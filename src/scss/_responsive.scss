@@ -1,19 +1,24 @@
 @media (min-width: em(1199)) {
-    .port-item {
-      padding: 3em !important;
-    }
-    .last-item{
-      padding-left: em(115);
+  .port-item {
+    padding: 2.69em !important;
   }
+  .last-item {
+    padding-left: em(115);
   }
-  
+}
+
+@media only screen and (max-width: em(770)) {
+  .column-md{
+    flex-direction: column;;
+  }
+}
 
 @media only screen and (max-width: em(500)) {
-    .display-main {
-      font-size: 1.5rem;
-    }
-
-    .icon-name {
-      font-size: em(10);
-    }
+  .display-main {
+    font-size: 1.5rem;
   }
+
+  .icon-name {
+    font-size: em(10);
+  }
+}
