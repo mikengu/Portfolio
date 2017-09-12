@@ -1,15 +1,42 @@
-@media (min-width: em(1199)) {
+// @media (min-width: em(1199)) {
+// }
+
+@media only screen and (min-width: em(992)) {
+  
   .port-item {
     padding: 2.69em !important;
   }
   .last-item {
     padding-left: em(115);
   }
+
+  img {
+    height: 100%;
+    width: 100%
+  }
 }
+
+@media only screen and (min-width: em(991)) {
+  img {
+    max-height: em(390);
+    max-width: em(390);
+  }
+}
+
+@media only screen and (max-width: em(990)) {
+  .display-main {
+    font-size: 3rem;
+  }
+}
+
 
 @media only screen and (max-width: em(770)) {
   .column-md{
     flex-direction: column;;
+  }
+
+  .display-main {
+    font-size: 3.5rem;
   }
 }
 
