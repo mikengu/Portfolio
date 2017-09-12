@@ -3,7 +3,7 @@ body {
   background: #a7b3a5; }
 
 .display-main {
-  font-size: 4.5rem;
+  font-size: 4.75rem;
   font-weight: 300;
   line-height: 1.1; }
 
@@ -119,18 +119,32 @@ body {
   -webkit-box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.5);
   box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.5); }
 
-@media (min-width: 74.9375em) {
+@media only screen and (min-width: 62em) {
   .port-item {
     padding: 2.69em !important; }
   .last-item {
-    padding-left: 7.1875em; } }
+    padding-left: 7.1875em; }
+  img {
+    height: 100%;
+    width: 100%; } }
+
+@media only screen and (min-width: 61.9375em) {
+  img {
+    max-height: 24.375em;
+    max-width: 24.375em; } }
+
+@media only screen and (max-width: 61.875em) {
+  .display-main {
+    font-size: 3rem; } }
 
 @media only screen and (max-width: 48.125em) {
   .column-md {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .display-main {
+    font-size: 3.5rem; } }
 
 @media only screen and (max-width: 31.25em) {
   .display-main {
