@@ -144,10 +144,16 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
   .display-main {
-    font-size: 3.5rem; } }
+    font-size: 3.3rem; }
+  img {
+    display: none; } }
 
 @media only screen and (max-width: 31.25em) {
   .display-main {
     font-size: 1.5rem; }
   .icon-name {
-    font-size: 0.625em; } }
+    font-size: 0.625em; }
+  .display-main {
+    font-size: 1.8rem; }
+  #main-header .header-icons {
+    font-size: 15px; } }

@@ -36,7 +36,11 @@
   }
 
   .display-main {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
+  }
+
+  img {
+    display: none;
   }
 }
 
@@ -47,5 +51,13 @@
 
   .icon-name {
     font-size: em(10);
+  }
+
+  .display-main {
+    font-size: 1.8rem;
+  }
+
+  #main-header .header-icons {
+    font-size: 15px;
   }
 }
