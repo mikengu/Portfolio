@@ -10,14 +10,14 @@
     padding-left: em(115);
   }
 
-  img {
+  .main-img {
     height: 100%;
     width: 100%
   }
 }
 
 @media only screen and (min-width: em(991)) {
-  img {
+  .main-img {
     max-height: em(390);
     max-width: em(390);
   }
@@ -39,7 +39,7 @@
     font-size: 3.3rem;
   }
 
-  img {
+  .main-img {
     display: none;
   }
 }
