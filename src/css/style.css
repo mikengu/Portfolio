@@ -18,6 +18,9 @@ body {
 .second-card-title {
   font-size: 2.1875em; }
 
+.card-background {
+  background-color: #1d2731; }
+
 .main-img {
   width: 300px;
   height: 400px; }
@@ -71,23 +74,35 @@ body {
 .header-accent {
   background: #592f5a;
   color: #fff;
-  padding: .5rem; }
+  padding: 0.5rem; }
 
 .full-stack {
   padding-left: 1.5rem; }
 
 .port-item {
   width: 25%;
-  -webkit-transition: 0.3s ease opacity;
-  transition: 0.3s ease opacity;
   border-bottom: 5px solid transparent; }
   .port-item .fa {
     font-size: 1.875em; }
 
 .port-item:hover {
-  opacity: 0.8;
-  border-bottom: 2px solid #5d37a2;
-  cursor: pointer; }
+  border-bottom: 2px solid #5d37a2; }
+
+.navbar-link {
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #fff; }
+
+.navbar-link:visited {
+  text-decoration: none; }
+
+.navbar-link:hover {
+  color: #7359AA;
+  text-decoration: none; }
+
+.navbar-link:active {
+  color: #7359AA; }
 
 .icon-name {
   font-size: 0.625em; }
@@ -121,6 +136,15 @@ body {
   .contact-backdrop:hover {
     opacity: 0.94;
     cursor: pointer; }
+
+.portfolio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .work-card {
   -webkit-transition: all 0.195s cubic-bezier(0.4, 0, 0.2, 1);
@@ -183,7 +207,14 @@ body {
   .about-title {
     font-size: 2.8125em; }
   .main-text {
-    font-size: 1.3125em; } }
+    font-size: 1.3125em; }
+  .portfolio-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .work-card {
+    min-width: 400px; } }
 
 @media only screen and (min-width: 62em) {
   .nav-box {
@@ -195,7 +226,9 @@ body {
   .header-accent {
     padding: .6rem; }
   .port-item .fa {
-    font-size: 3.4375em;
+    font-size: 3.3125em;
     padding: 8.5px; }
   .icon-name {
-    font-size: 1.25em; } }
+    font-size: 1.25em; }
+  .work-card {
+    min-width: 300px; } }
