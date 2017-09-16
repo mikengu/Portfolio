@@ -1,63 +1,78 @@
-// @media (min-width: em(1199)) {
-// }
 
-@media only screen and (min-width: em(992)) {
-  
-  .port-item {
-    padding: 2.69em !important;
-  }
-  .last-item {
-    padding-left: em(115);
-  }
-
-  .main-img {
-    height: 100%;
-    width: 100%
-  }
-}
-
-@media only screen and (min-width: em(991)) {
-  .main-img {
-    max-height: em(390);
-    max-width: em(390);
-  }
-}
-
-@media only screen and (max-width: em(990)) {
-  .display-main {
-    font-size: 3rem;
-  }
-}
-
-
-@media only screen and (max-width: em(770)) {
-  .column-md{
-    flex-direction: column;;
-  }
-
-  .display-main {
-    font-size: 3.3rem;
-  }
-
-  .main-img {
+@media only screen and (max-width: em(991)) {
+  .img-container {
     display: none;
   }
+  
 }
 
-@media only screen and (max-width: em(500)) {
-  .display-main {
-    font-size: 1.5rem;
+@media only screen and (min-width: em(768)) {
+  .second-card-title {
+    font-size: em(55);
+    padding-bottom: em(10);
   }
 
+ .nav-box {
+   padding: 3rem;
+ }
+
+ .display-main {
+   font-size: em(60);
+   padding-right: 0;
+ }
+
+ .header-icons {
+   font-size: em(32);
+ }
+
+ .full-stack {
+   padding-left: 3rem;
+   font-size: em(19);
+ }
+
+ .port-item .fa {
+   font-size: em(45);
+ }
+
+ .icon-name {
+   font-size: em(18);
+ }
+
+ .about-title {
+   font-size: em(45);
+ }
+
+ .main-text {
+   font-size: em(21);
+ }
+}
+
+@media only screen and (min-width: em(992)) {
+  .nav-box {
+    padding: 3.2rem;
+  }
+ 
+
+  .display-main {
+    font-size: em(90);
+    
+  }
+ 
+  .header-icons {
+    font-size: em(32);
+  }
+ 
+ .header-accent {
+   padding: .6rem;
+ }
+ 
+  .port-item .fa {
+    font-size: em(55);
+    padding: 8.5px;
+  }
+ 
   .icon-name {
-    font-size: em(10);
+    font-size: em(20);
   }
-
-  .display-main {
-    font-size: 1.8rem;
-  }
-
-  #main-header .header-icons {
-    font-size: 15px;
-  }
-}
+ }
+  

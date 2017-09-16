@@ -1,13 +1,13 @@
 body {
   font-family: $font-stack;
   background: $main-background;
+  font-size: 14px;
 }
 
-.display-main {
-  font-size: 4.75rem;
-  font-weight: 300;
-  line-height: 1.1;
+.bor {
+  border: 3px solid red;
 }
+
 
 .main-text {
   font-size: em(16);
@@ -21,6 +21,6 @@ body {
 }
 
 .second-card-title {
-  font-size: em(55);
+  font-size: em(35);
 }
 
