@@ -45,6 +45,15 @@
  .main-text {
    font-size: em(21);
  }
+
+ .portfolio-list {
+   flex-direction: row;
+ }
+
+ .work-card {
+   min-width: 400px;
+ }
+
 }
 
 @media only screen and (min-width: em(992)) {
@@ -67,12 +76,16 @@
  }
  
   .port-item .fa {
-    font-size: em(55);
+    font-size: em(53);
     padding: 8.5px;
   }
  
   .icon-name {
     font-size: em(20);
+  }
+
+  .work-card {
+    min-width: 300px;
   }
  }
   
