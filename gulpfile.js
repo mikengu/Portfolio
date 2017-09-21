@@ -2,6 +2,8 @@ const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const autoprefixer = require("gulp-autoprefixer");
 const sass = require("gulp-sass");
+const nano = require("gulp-cssnano");
+const uncss = require("gulp-uncss");
 
 
 // Compile Sass & Inject Into Browser
@@ -13,6 +15,10 @@ gulp.task("sass", function() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
+    .pipe(nano())
+    // .pipe(uncss({
+    //   html: ['index.html']
+    // }))
     .pipe(gulp.dest("src/css"))
     .pipe(browserSync.stream());
 });
