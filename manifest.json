@@ -2,9 +2,10 @@
     "name": "Mike Portfolio",
     "short_name": "MikePg",
     "lang": "en-US",
-    "start_url": "/",
+    "start_url": "/index.html",
     "display": "standalone",
     "theme_color": "#592f5a",
+    "background-color": "#fff",
     "dir": "ltr",
     "orientation": "portrait-primary",
     "descrition": "Mike Ngu portfolio",
@@ -82,6 +83,11 @@
       {
         "src": "/src/icons/apple-icon-180x180.png",
         "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "/src/icons/apple-icon-512x512.png",
+        "sizes": "512x512",
         "type": "image/png"
       }
     ]
