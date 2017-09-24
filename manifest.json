@@ -3,7 +3,7 @@
     "short_name": "MikePg",
     "lang": "en-US",
     "start_url": "/",
-    "display": "browser",
+    "display": "standalone",
     "theme_color": "#592f5a",
     "dir": "ltr",
     "orientation": "portrait-primary",
