@@ -5,7 +5,7 @@
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#592f5a",
-    "background-color": "#fff",
+    "background_color": "#fff",
     "dir": "ltr",
     "orientation": "portrait-primary",
     "descrition": "Mike Ngu portfolio",
