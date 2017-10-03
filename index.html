@@ -26,6 +26,15 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="./src/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#592f5a">
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then(function() {
+        console.log('Welcome :)');
+      });
+  }
+  </script>
 </head>
 
 <body>
@@ -34,7 +43,7 @@
     <header id="main-header">
       <div class="d-flex card-background">
         <div class="img-container">
-          <img class="main-img" src="https://res.cloudinary.com/mngu/image/upload/v1506834210/profile_kqksqj.jpg">
+          <img class="main-img" src="./dist/images/profile.jpeg">
         </div>
 
 
@@ -45,13 +54,13 @@
               <div class="name d-flex flex-row justify-content-between align-items-center p-2">
                 <h1 class="display-main">Mike Ngu</h1>
 
-                <div><a class="icon-links" href="https://twitter.com/ngu_mike"><i class="fa fa-twitter header-icons"></i></a></div>
+                <div><a role="link" class="icon-links" href="https://twitter.com/ngu_mike"><i class="fa fa-twitter header-icons"></i></a></div>
 
-                <div><a class="icon-links" href="https://github.com/mikengu"><i class="fa fa-github header-icons"></i></a></div>
+                <div><a role="link" class="icon-links" href="https://github.com/mikengu"><i class="fa fa-github header-icons"></i></a></div>
 
-                <div><a class="icon-links" href="https://www.linkedin.com/in/mike-ngu-935802138"><i class="fa fa-linkedin header-icons"></i></a></div>
+                <div><a role="link" class="icon-links" href="https://www.linkedin.com/in/mike-ngu-935802138"><i class="fa fa-linkedin header-icons"></i></a></div>
 
-                <div><a class="icon-links" href="https://www.pinterest.com/mikeindfw/"><i class="fa fa-pinterest header-icons"></i></a></div>
+                <div><a role="link" class="icon-links" href="https://www.pinterest.com/mikeindfw/"><i class="fa fa-pinterest header-icons"></i></a></div>
 
               </div>
             </div>
@@ -308,12 +317,10 @@
 
           <!-- Project Item One -->
           <div class="card work-card my-4">
-            <img class="card-img-top" src="https://res.cloudinary.com/mngu/image/upload/v1506836652/Optimized-sushi_rmxcf4.jpg" alt="SushiNow Project">
+            <img class="card-img-top" src="./img/sushi-optimized.png" alt="SushiNow Project">
             <div class="card-block">
-              <h4 class="card-title pt-3 px-3">Title</h4>
-              <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur animi incidunt, impedit vel quae
-                architecto aperiam est odit, nobis, facere nihil cumque repellat quia dolores obcaecati accusamus repudiandae
-                voluptas.
+              <h4 class="card-title pt-3 px-3">SushiNow</h4>
+              <p class="card-text px-3">Subscription based webpage developed from scratch with html, css, javascript, and a bit of jQuery.
               </p>
               <hr>
               <div class="d-flex justify-content-center">
@@ -332,12 +339,10 @@
 
           <!-- Project Item Two -->
           <div class="card work-card my-4">
-            <img class="card-img-top" src="https://res.cloudinary.com/mngu/image/upload/v1506836652/Optimized-evan_cbfiyb.jpg" alt="Portfolio Project">
+            <img class="card-img-top" src="./img/evan-optimized.png" alt="Portfolio Project">
             <div class="card-block">
-              <h4 class="card-title pt-3 px-3">Title</h4>
-              <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur animi incidunt, impedit vel quae
-                architecto aperiam est odit, nobis, facere nihil cumque repellat quia dolores obcaecati accusamus repudiandae
-                voluptas.
+              <h4 class="card-title pt-3 px-3">Portfolio Page</h4>
+              <p class="card-text px-3">Personal portfolio built from scratch and ensuring it meet WCAG 2.0 and ADA requirments. Usage of Animate.CSS API for animation.
               </p>
               <hr>
               <div class="d-flex justify-content-center">
@@ -354,14 +359,13 @@
             </div>
           </div>
 
+          
           <!-- Project Item Three -->
           <div class="card work-card my-4">
-            <img class="card-img-top" src="https://res.cloudinary.com/mngu/image/upload/v1506836652/Optimized-got_jfgjwe.jpg" alt="Game of Thrones Project">
+            <img class="card-img-top" src="./img/got-optimized.png" alt="Game of Thrones Project">
             <div class="card-block">
-              <h4 class="card-title pt-3 px-3">Title</h4>
-              <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur animi incidunt, impedit vel quae
-                architecto aperiam est odit, nobis, facere nihil cumque repellat quia dolores obcaecati accusamus repudiandae
-                voluptas.
+              <h4 class="card-title pt-3 px-3">Game of Thrones List</h4>
+              <p class="card-text px-3">Can't keep up with all of the GoT characters so this was made. Pug and Sass was used for modularizing the code base and gulp for automating many of the redundant tasks such as image opimization and code minification.
               </p>
               <hr>
               <div class="d-flex justify-content-center">
@@ -384,12 +388,10 @@
 
           <!-- Project Item Four -->
           <div class="card work-card my-4">
-            <img class="card-img-top" src="https://res.cloudinary.com/mngu/image/upload/v1506836650/Optimized-flashcard_qmyy9e.jpg" alt="Flashcard App">
+            <img class="card-img-top" src="./img/flashcard-optimized.png" alt="Flashcard App">
             <div class="card-block">
-              <h4 class="card-title pt-3 px-3">Title</h4>
-              <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur animi incidunt, impedit vel quae
-                architecto aperiam est odit, nobis, facere nihil cumque repellat quia dolores obcaecati accusamus repudiandae
-                voluptas.
+              <h4 class="card-title pt-3 px-3">Flashcard Application</h4>
+              <p class="card-text px-3">Tutorial series from TeamTreeHouse over Express.js. It covered how to implement Express.js into Node.js and how to set up the basic route structure for a simple application. It includes mocking data from a database and setting a data schema to follow.
               </p>
               <hr>
               <div class="d-flex justify-content-center">
@@ -408,12 +410,30 @@
 
           <!-- Project Item Five -->
           <div class="card work-card my-4">
-            <img class="card-img-top" src="https://res.cloudinary.com/mngu/image/upload/v1506836652/Optimized-invitation_fcroql.jpg" alt="Invitation App">
+            <img class="card-img-top" src="./img/weather.png" alt="Weather App">
+            <div class="card-block">
+              <h4 class="card-title pt-3 px-3">CL Weather Application</h4>
+              <p class="card-text px-3">An app that returns the temperature and humidity from the desired location. Built with Node.js and by connecting the Google Geolocation API with the Dark Sky Weather API.
+              </p>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="Javascript" src="https://res.cloudinary.com/mngu/image/upload/v1506825659/javascript_xosxen.svg" alt="Javascript">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="NodeJS" src="https://res.cloudinary.com/mngu/image/upload/v1506825652/nodejs_lr0oja.svg" alt="NodeJS">
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between px-3 pb-3">
+                <span><a href="#">Live Site</a></span>
+                <span><a href="#">Repo</a></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Item Six -->
+          <div class="card work-card my-4">
+            <img class="card-img-top" src="./img/converter.png" alt="Converter App">
             <div class="card-block">
               <h4 class="card-title pt-3 px-3">Title</h4>
-              <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur animi incidunt, impedit vel quae
-                architecto aperiam est odit, nobis, facere nihil cumque repellat quia dolores obcaecati accusamus repudiandae
-                voluptas.
+              <p class="card-text px-3">Being in a global slack means that a lot of different units are used, so this was made to make converting a bit easier. 
               </p>
               <hr>
               <div class="d-flex justify-content-center">
@@ -429,23 +449,20 @@
             </div>
           </div>
 
-          <!-- Project Item Six -->
+          <!-- Project Row 3 -->
+
+          <!-- Invitation -->
           <div class="card work-card my-4">
-            <img class="card-img-top" src="https://res.cloudinary.com/mngu/image/upload/v1506836651/Optimized-twitter_f2l2n6.jpg" alt="Card image cap">
+            <img class="card-img-top" src="./img/invitation-optimized.png" alt="Invitation Application">
             <div class="card-block">
-              <h4 class="card-title pt-3 px-3">Title</h4>
-              <p class="card-text px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur animi incidunt, impedit vel quae
-                architecto aperiam est odit, nobis, facere nihil cumque repellat quia dolores obcaecati accusamus repudiandae
-                voluptas.
+              <h4 class="card-title pt-3 px-3">Invitation App</h4>
+              <p class="card-text px-3">Subscription based webpage developed from scratch with html, css, javascript, and a bit of jQuery.
               </p>
               <hr>
               <div class="d-flex justify-content-center">
                 <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="HTML5" src="https://res.cloudinary.com/mngu/image/upload/v1506825657/html5_wpkchu.svg" alt="HTML5">
                 <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="CSS3" src="https://res.cloudinary.com/mngu/image/upload/v1506825662/css3_wxbhrf.svg" alt="CSS">
                 <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="Javascript" src="https://res.cloudinary.com/mngu/image/upload/v1506825659/javascript_xosxen.svg" alt="Javascript">
-                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="NodeJS" src="https://res.cloudinary.com/mngu/image/upload/v1506825652/nodejs_lr0oja.svg" alt="NodeJS">
-                <img class="tech-item mongo-leaf" data-toggle="tooltip" data-placement="bottom" title="MongoDB" src="https://res.cloudinary.com/mngu/image/upload/v1506825651/mongodb_vjexr5.svg"
-                  alt="MongoDB">
               </div>
               <hr>
               <div class="d-flex justify-content-between px-3 pb-3">
@@ -454,6 +471,52 @@
               </div>
             </div>
           </div>
+
+          <!-- Github Battle -->
+          <div class="card work-card my-4">
+            <img class="card-img-top" src="./img/github_battle.png" alt="Github Battle App">
+            <div class="card-block">
+              <h4 class="card-title pt-3 px-3">Github Battle</h4>
+              <p class="card-text px-3">Personal portfolio built from scratch and ensuring it meet WCAG 2.0 and ADA requirments. Usage of Animate.CSS API for a more visual based design
+              </p>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="HTML5" src="https://res.cloudinary.com/mngu/image/upload/v1506825657/html5_wpkchu.svg" alt="HTML5">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="CSS3" src="https://res.cloudinary.com/mngu/image/upload/v1506825662/css3_wxbhrf.svg" alt="CSS">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="Javascript" src="https://res.cloudinary.com/mngu/image/upload/v1506825659/javascript_xosxen.svg" alt="Javascript">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="React" src="./img/react.svg" alt="React">
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between px-3 pb-3">
+                <span><a href="#">Live Site</a></span>
+                <span><a href="#">Repo</a></span>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Project Item Three -->
+          <div class="card work-card my-4">
+            <img class="card-img-top" src="./img/React-cat.png" alt="Cat Application">
+            <div class="card-block">
+              <h4 class="card-title pt-3 px-3">Cat Break</h4>
+              <p class="card-text px-3">A react application that generate a random cat video everytime you visit. Currently in progress: making button component that re-renders the page.
+              </p>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="HTML5" src="https://res.cloudinary.com/mngu/image/upload/v1506825657/html5_wpkchu.svg" alt="HTML5">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="CSS3" src="https://res.cloudinary.com/mngu/image/upload/v1506825662/css3_wxbhrf.svg" alt="CSS">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="Javascript" src="https://res.cloudinary.com/mngu/image/upload/v1506825659/javascript_xosxen.svg" alt="Javascript">
+                <img class="tech-item" data-toggle="tooltip" data-placement="bottom" title="React" src="./img/react.svg" alt="React">
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between px-3 pb-3">
+                <span><a href="#">Live Site</a></span>
+                <span><a href="#">Repo</a></span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
