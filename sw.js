@@ -16,6 +16,7 @@ self.addEventListener('install', function(event) {
                     '/img/github_battle.png',
                     '/img/react-cat.png',
                     '/img/profile.jpeg',
+                    '/img/converter.png',
                     'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
                     'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css',
                     'https://code.jquery.com/jquery-3.2.1.slim.min.js',
