@@ -530,13 +530,15 @@
       </div>
 
       <div class="card card-body py-5">
-        <form>
+
+          <form action="https://formspree.io/mikengu01@gmail.com"
+          method="POST">
           <div class="form-group">
             <div class="input-group input-group-lg">
               <span class="input-group-addon contact-backdrop text-white">
                 <i class="fa fa-user"></i>
               </span>
-              <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+              <input type="text" name="name" class="form-control bg-dark text-white" placeholder="Name">
             </div>
           </div>
           <div class="form-group">
@@ -544,7 +546,7 @@
               <span class="input-group-addon contact-backdrop text-white">
                 <i class="fa fa-envelope"></i>
               </span>
-              <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+              <input type="email" name="_replyto" class="form-control bg-dark text-white" placeholder="Email">
             </div>
           </div>
           <div class="form-group">
@@ -552,11 +554,12 @@
               <span class="input-group-addon contact-backdrop text-white">
                 <i class="fa fa-pencil"></i>
               </span>
-              <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+              <textarea rows="5" name="message" class="form-control bg-dark text-white" placeholder="Message"></textarea>
             </div>
           </div>
-          <input type="submit" value="Submit" class="btn btn-block btn-lg contact-backdrop">
+          <input type="submit" value="Send" class="btn btn-block btn-lg contact-backdrop">
         </form>
+
       </div>
     </div>
 
