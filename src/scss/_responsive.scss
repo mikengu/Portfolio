@@ -6,15 +6,7 @@
 
 @media only screen and (max-width: em(420)) {
   .container {
-    min-width: em(450);
-    // border: 3px red solid;
-    // min-width: 100vh;
-  }
-
-  .container *,
-  .container *:before,
-  .container *:after {
-    box-sizing: content-box;
+    padding: 5px;
   }
 }
 
@@ -86,7 +78,7 @@
 
   .port-item .fa {
     font-size: em(53);
-    padding: 8.5px;
+    padding: 1.5rem;
   }
 
   .icon-name {
