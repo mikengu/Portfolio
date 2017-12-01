@@ -1,0 +1,14 @@
+.footer-style {
+    color: #f8f9fa;
+    background-color: transparent;
+    border-color: #f8f9fa;
+    transition: color 0.3s;
+  }
+
+    .footer-style:hover {
+        color: #98519A;
+        border-color: #98519A; }
+      .footer-style:focus, .footer-style.focus {
+        box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.5); }
+     
+     

@@ -1,0 +1,22 @@
+body {
+  font-family: $font-stack;
+  background: $main-background;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-text {
+  font-size: em(16);
+  font-weight: 400;
+  letter-spacing: em(1.5);
+}
+
+.card-color {
+  background: $secondary-color;
+  color: $text-color;
+}
+
+.second-card-title {
+  font-size: em(35);
+}
