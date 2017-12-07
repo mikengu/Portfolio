@@ -1,7 +1,10 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: $font-stack;
   background: $main-background;
-  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
